@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Box Model</title>
+</head>
+<body>
+  <main>
+    <h1>Conceptos y ejemplo de box model</h1>
+    <ol>
+      <li>¿Que es box model?
+        <p>el box model es una caja que esta hecha en 4 partes que son:</p>
+        <p>margin, padding, border y (width, height), estas partes lo contiene todos los elementos de la web.</p>
+      </li>
+      <li>Uso particular de selector universal
+        <p>El uso mas frecuente para este selector es el de reseteo de estilos para los navegadores que cuentan con estilos predeterminados,
+          tambien para dar estilos a las etiquetas que necesitan usar lo mismo.
+        </p>
+      </li>
+      <li>Explicando las capas del box model
+        <ul>
+          <li>Capa interna
+            <p>Contenido: es la parte principal de la caja donde se puede modificar el width y height.</p>
+            <p>Padding: es la parte que rodea el cotenido y genera el espacio del contenido con el borde.</p>
+          </li>
+          <li>Capa externa
+            <p>Border: esto genera el borde del contenido y padding.</p>
+            <p>Margin: este nos ayuda a brindar espacios entre otras cajas.</p>
+          </li>
+        </ul>
+      </li>
+      <li>Explicando el shorthand padding y margin.
+        <div>
+          <h2>Padding</h2>
+          <code>
+            padding: 20px; //se dara 20px a todos los lados <br>
+            padding: 10px 5px; //se da 10px arriba/abajo y 5px izquierda/derecha <br>
+            padding: 10px 5px 20px //se da 10px arriba, 5px izquierda/derecha, 20px abajo <br>
+            padding: 10px 5px 20px 5px //se da 10px arriba, 5px derecha, 20px abajo, 5px izquierda
+          </code>
+        </div>
+        <div>
+          <h2>Margin</h2>
+          <code>
+            margin: 20px; //se dara 20px a todos los lados <br>
+            margin: 10px 5px; //se da 10px arriba/abajo y 5px izquierda/derecha <br>
+            margin: 10px 5px 20px //se da 10px arriba, 5px izquierda/derecha, 20px abajo <br>
+            margin: 10px 5px 20px 5px //se da 10px arriba, 5px derecha, 20px abajo, 5px izquierda
+          </code>
+        </div>
+      </li>
+      <li>Explicando que es el margin negativo
+        <p>un margen negativo nos ayuda a poder sobreponer un contenedor.</p>
+        <code>
+          margin: -10px;
+        </code>
+      </li>
+      <li>Colapso de margenes verticales
+        <p>este colapso surge cuando 2 bloques no llegan a sumar sus margenes y toman el tamaño del margen mas grande.</p>
+      </li>
+      <li>Centrado perfecto horizontal
+        <p>
+          para lograr un centrado perfecto se necesita realizar un ancho que sea menor al contenedor y dar un margin left y height auto. <br>
+          <code>
+            header{
+              width: 40px;
+              margin: auto;
+            } <br>
+            section{
+              width: 50%;
+              margin: auto;
+            }
+          </code>
+        </p>
+      </li>
+    </ol>
+  </main>
+</body>
+</html>

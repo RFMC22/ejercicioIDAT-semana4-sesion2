@@ -55,3 +55,16 @@
         color: red;
       }
       ```
+# Box Model
+En el ```box_model.html``` se podra ver los conceptos y ejemplos
+1. ¿Que es box model?
+2. Uso particular de selector universal.
+3. Explicando las capas del box model.
+    * Capa interna
+    * Capa externa
+4. Explicando el shorthand padding y margin.
+    * Padding
+    * Margin
+5. Colapso de margenes verticales
+6. Centrado perfecto horizontal
+  <img src="https://github.com/RFMC22/RFMC22/assets/60860968/6cb8b338-ce55-40fa-8ab4-d2a178b3e4f4">
